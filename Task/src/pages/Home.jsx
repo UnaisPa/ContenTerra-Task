@@ -25,9 +25,7 @@ const Home = () => {
         <>
             <Header />
             <div className='mx-5 sm:mx-10 md:mx-12 ' >
-                <div className='my-3'
-                //  className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 2xl:grid-cols-4 xl:gap-x-8'
-                >
+                <div className='my-3'>
                     {loading ? Array(4).fill().map((_, index) => <Skeleton key={index} />)
                         :
                         posts.length ? posts.map((item, index) => {
@@ -38,8 +36,6 @@ const Home = () => {
                         }) : <div>
                             <h1>Items not found</h1>
                         </div>}
-
-
                 </div>
 
             </div>

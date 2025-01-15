@@ -1,4 +1,4 @@
-import { useState, Suspense, lazy } from 'react'
+import {Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const Home = lazy(()=>import('./pages/Home'))
 import './App.css'
@@ -13,7 +13,6 @@ function App() {
                     <Route path='/' element={<Home />} />
                 </Routes>
             </BrowserRouter>
-
         </>
     )
 }
